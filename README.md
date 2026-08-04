@@ -1,17 +1,29 @@
-# FastBite
+# FastBite 🍔
 
-A new Flutter project.
+A food ordering app that lets customers browse a menu, order meals, and track their deliveries — built with Flutter and a local SQLite database.
 
-## Getting Started
+## Features
 
-This project is a starting point for a Flutter application.
+- 🔐 **Account system** — register and log in, with hashed passwords and persistent sessions (stay logged in between app launches)
+- 🍽️ **Browse the menu** — search by name and filter by category
+- 🛒 **Cart management** — add items, adjust quantities, see a live price breakdown (subtotal, delivery fee, total)
+- 📦 **Order placement** — checkout with a delivery address to place an order
+- 📋 **Order tracking** — view order history with status badges, cancel an order, or mark it as received
+- 💾 **Offline-first** — all data (accounts, menu, cart, orders) is stored locally on-device, no backend server required
 
-A few resources to get you started if this is your first Flutter project:
+## Tech Stack
 
-- [Learn Flutter](https://docs.flutter.dev/get-started/learn-flutter)
-- [Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Flutter learning resources](https://docs.flutter.dev/reference/learning-resources)
+| Layer | Technology |
+|---|---|
+| Framework | Flutter |
+| State management | [Provider](https://pub.dev/packages/provider) |
+| Local database | [sqflite](https://pub.dev/packages/sqflite) (SQLite) |
+| Session persistence | [shared_preferences](https://pub.dev/packages/shared_preferences) |
+| Password hashing | [crypto](https://pub.dev/packages/crypto) |
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## Screenshots
+
+<!-- Add screenshots here, e.g.: -->
+<!-- <img src="screenshots/home.png" width="250" /> <img src="screenshots/cart.png" width="250" /> <img src="screenshots/orders.png" width="250" /> -->
+
+## Project Structure
